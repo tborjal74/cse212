@@ -40,14 +40,14 @@ public class PriorityQueueTests
     {
         var priorityQueue = new PriorityQueue();
 
-        priorityQueue.Enqueue("A", -10);
-        priorityQueue.Enqueue("B", -2);
-        priorityQueue.Enqueue("C", 5);
-        priorityQueue.Enqueue("D", 1);
+        priorityQueue.Enqueue("F1", -10);
+        priorityQueue.Enqueue("F2", -2);
+        priorityQueue.Enqueue("F3", 5);
+        priorityQueue.Enqueue("F4", 1);
 
         var result = priorityQueue.Dequeue();
 
-        Assert.AreEqual("C", result);
+        Assert.AreEqual("F3", result);
     }
 
     // Add more test cases as needed below.
@@ -59,17 +59,17 @@ public class PriorityQueueTests
     {
         var priorityQueue = new PriorityQueue();
 
-        priorityQueue.Enqueue("A", 1);
-        priorityQueue.Enqueue("B", 5);
-        priorityQueue.Enqueue("C", 2);
-        priorityQueue.Enqueue("D", 3);
-        priorityQueue.Enqueue("E", 5);
+        priorityQueue.Enqueue("F1", 1);
+        priorityQueue.Enqueue("F2", 5);
+        priorityQueue.Enqueue("F3", 2);
+        priorityQueue.Enqueue("F4", 3);
+        priorityQueue.Enqueue("F5", 5);
 
         var firstResult = priorityQueue.Dequeue();
         var secondResult = priorityQueue.Dequeue(); //Checking if the FIFO Behavior is working
 
-        Assert.AreEqual("B", firstResult); //Highest priority first
-        Assert.AreEqual("E", secondResult);//FIFO for the same priority
+        Assert.AreEqual("F2", firstResult); //Highest priority first
+        Assert.AreEqual("F5", secondResult);//FIFO for the same priority
     }
     // Add more test cases as needed below.
 
