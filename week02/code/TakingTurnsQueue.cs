@@ -45,6 +45,9 @@ public class TakingTurnsQueue
                 person.Turns -= 1;
                 _people.Enqueue(person);
             }
+            else if (person.Turns <=0){ // Add another condition to check if the person's turn is equal or less than zero.
+                _people.Enqueue(person);
+            }
 
             return person;
         }
