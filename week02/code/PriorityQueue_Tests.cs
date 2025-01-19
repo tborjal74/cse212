@@ -55,7 +55,7 @@ public class PriorityQueueTests
     //Scenario: Add items with same priority and ensure the Dequeue() function will follow the FIFO behavior for the items with the same priority
     //Expected Result: "B", then "E"
     //Defect(s) Found:
-    public void TestPriorityQueue_SamePriorities()
+    public void TestPriorityQueue_EqualPriorities()
     {
         var priorityQueue = new PriorityQueue();
 
