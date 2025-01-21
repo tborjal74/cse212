@@ -34,7 +34,7 @@ public class PriorityQueueTests
 
     [TestMethod]
     // Scenario: Add items with mixed priorities and ensure the Dequeue() function will always retrieve the highest priority item.
-    // Expected Result: "C"
+    // Expected Result: "F3"
     // Defect(s) Found: 
     public void TestPriorityQueue_MixedPriorities()
     {
@@ -53,7 +53,7 @@ public class PriorityQueueTests
     // Add more test cases as needed below.
     [TestMethod]
     //Scenario: Add items with same priority and ensure the Dequeue() function will follow the FIFO behavior for the items with the same priority
-    //Expected Result: "B", then "E"
+    //Expected Result: "F2", then "F5"
     //Defect(s) Found:
     public void TestPriorityQueue_EqualPriorities()
     {
